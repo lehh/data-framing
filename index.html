@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <title>Framing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link async="async" href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            padding: 20px;
+            background-color: #f3f8ff;
+        }
+
+        .hiddenInfo {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <h5>Framing</h5>
+
+        <div id="version" class="pull-right">
+            <b>v1.0</b>
+        </div>
+    </nav>
+
+    <div id="alert" class="alert hiddenInfo">
+        <span id="alertMessage"></span>
+    </div>
+
+    <div class="container-fluid">
+        <main id="mainFrame" class="py-4" role="main">
+        </main>
+
+        <div id="secondFrame" class="py-4">
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script defer="defer" src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script async="async" src="js/bootstrap.min.js"></script>
+    <script defer="defer" src="js/index.js"></script>
+    <script defer="defer" src="js/fontawesome/fa-solid.min.js"></script>
+    <script defer="defer" src="js/fontawesome/fontawesome.min.js"></script>
+
+    <script type="text/javascript">
+        $.ajax({
+            url: "main.html",
+            cache: false,
+            success: function (page) {
+                $("#mainFrame").html(page);
+            }
+        });
+    </script>
+</body>
+</html>

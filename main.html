@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-5">
+            <button class="btn btn-primary btn-block" id="btnTransmit">Transmit Message</button>
+            <button class="btn btn-primary btn-block" id="btnReceive">Receive Message</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnTransmit").on("click", function () {
+                loadAtSecondFrame("framing.html", "transmit");
+            });
+
+            $("#btnReceive").on("click", function () {
+                loadAtSecondFrame("framing.html", "receive");
+            });
+        });
+    </script>
+</div>

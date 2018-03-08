@@ -1,0 +1,57 @@
+<div id="form">
+    <span id="mode" hidden></span>
+    <div class="row form-group">
+        <div class="col-12">
+            <div id="btnGroup" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-success active">
+                    <input id="btnBit" name="buttons" type="radio" />Bit
+                </label>
+                <label class="btn btn-success">
+                    <input id="btnChar" name="buttons" type="radio" checked />Char
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-6 col-sm-2 com-md-1 col-lg-1">
+            <b>Flag: <span id="flag"> </span></b>
+        </div>
+        <div class="col-4 col-sm-3">
+            <b>Escape: <span id="escape"> </span></b>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-12">
+            <b><label id="questionLabel"></label></b>
+        </div>
+        <div class="col-12">
+            <label id="randomMessage"></label>
+            <button id="newMessage" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="right" title="Generate new message">
+                <span class="fas fa-sync-alt"></span>
+            </button>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-12">
+            <b><label id="answerLabel"></label></b>
+        </div>
+        <div class="col-12 col-sm-7 col-md-5 col-lg-3">
+            <input id="answer" class="form-control" type="text" />
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-12">
+            <button id="submitAnswer" type="button" class="btn btn-primary">Submit Answer</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/framing.js"></script>
+
+<!--<script type="text/javascript">
+    $.ajax({
+        url: 'js/framing.js',
+        dataType: "script",
+        cache: false
+    });
+</script>-->
